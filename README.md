@@ -1,2 +1,2 @@
-# itsquasi-python-projects
-Every Python files and projects made by itsquasi. 
+# itsquasi's Python Projects
+itsquasi’s frequently updated Python projects and files.
