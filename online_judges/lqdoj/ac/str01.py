@@ -1,0 +1,5 @@
+str1 = input()
+str2 = input()
+m = len(str1)
+n = len(str2)
+print(abs(m - n))
