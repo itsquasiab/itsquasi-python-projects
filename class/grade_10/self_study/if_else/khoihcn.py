@@ -1,0 +1,7 @@
+a, b, c, x, y = map(int, input().split())
+mnsz = min(x, y)
+mxsz = max(x, y)
+if min(a, b) <= mnsz and max(a, b) <= mxsz: print("CO")
+elif min(b, c) <= mnsz and max(b, c) <= mxsz: print("CO")
+elif min(a, c) <= mnsz and max(a, c) <= mxsz: print("CO")
+else: print("KHONG")
