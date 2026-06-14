@@ -1,13 +1,15 @@
 import pandas as pd
 
 data = {
-    'Bob': ['I liked it.', 'It was awful.'], 
-    'Sue': ['Pretty good.', 'Bland.']
+    'Bob': ['I liked it.', 'It was awful.', 'So so.'], 
+    'Sue': ['Pretty good.', 'Bland.', 'Fantastic!']
 }
-series = [1, 2, 3, 4, 5]
 
-display_data = pd.DataFrame(data, index=['Product A', 'Product B'])
-display_series = pd.Series(series)
+df = pd.DataFrame(data, index=['Product A', 'Product B', 'Product C'])
+sr = pd.Series([1, 2, 3, 4, 5])
 
-print(display_data)
-print(display_series)
+print(df)
+print(df.loc['Product A'])
+print(df.loc['Product A', 'Bob'])
+print(df.loc['Product A':'Product B', 'Bob'])
+#print(sr)
